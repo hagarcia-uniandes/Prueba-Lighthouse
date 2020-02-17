@@ -1,0 +1,8 @@
+{
+    "name": "rapt-lighthouse-recipe",
+    "private": true,
+    "scripts": {},
+    "devDependencies": {
+        "lighthouse": "^5.6.0"
+    }
+}
