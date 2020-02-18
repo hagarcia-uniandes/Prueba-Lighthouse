@@ -8,11 +8,10 @@ class LoadAudit extends Audit {
     static get meta(){
         return{
             category: 'MyPerformance',
-            name: 'card-audit',
+            id: 'card-audit',
+            title: 'Schedule card initialized and ready',
+            failureTitle: 'MyPerformance',
             description: 'Schedule card initialized and ready',
-            failureDescription: 'Schedule Card slow to initialize',
-            helpText: 'Used to measure time from navigationStart to when the schedule' +
-            ' card is shown.',
             requiredArtifacts: ['TimeToCard']
         };
     }

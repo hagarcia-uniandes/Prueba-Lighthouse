@@ -7,8 +7,8 @@ class TimeToCard extends Gatherer {
         const driver = options.driver;
 
         return driver.evaluateAsync('window.cardLoadTime')
-        .then(CardLoadTime => {
-            if (!CardLoadTime) {
+        .then(cardLoadTime => {
+            if (!cardLoadTime) {
                 throw new Error('Unable to find card load metrics in page');
             }
             return cardLoadTime;
